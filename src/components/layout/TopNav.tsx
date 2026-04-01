@@ -34,10 +34,9 @@ export const TopNav: React.FC = () => {
             key={item.to}
             to={item.to}
             className={({ isActive }) =>
-              `px-5 py-2 rounded-full text-sm font-medium transition-all duration-300 ${
-                isActive
-                  ? 'bg-bg-primary text-text-primary shadow-sm'
-                  : 'text-text-secondary hover:text-text-primary hover:bg-black/5 dark:hover:bg-white/5'
+              `px-5 py-2 rounded-full text-sm font-medium transition-all duration-300 ${isActive
+                ? 'bg-bg-primary text-text-primary shadow-sm'
+                : 'text-text-secondary hover:text-text-primary hover:bg-black/5 dark:hover:bg-white/5'
               }`
             }
           >
@@ -48,7 +47,7 @@ export const TopNav: React.FC = () => {
 
       <div className="flex items-center gap-4">
         {/* Theme Toggle Switch */}
-        <button 
+        <button
           onClick={() => updateSettings({ theme: settings.theme === 'light' ? 'dark' : 'light' })}
           className="relative w-14 h-8 rounded-full bg-black/10 dark:bg-white/10 flex items-center px-1 transition-colors"
         >
@@ -58,7 +57,7 @@ export const TopNav: React.FC = () => {
         </button>
 
         {/* Hamburger */}
-        <button 
+        <button
           onClick={toggleMainMenu}
           className="w-10 h-10 bg-bg-primary rounded-full shadow-sm flex items-center justify-center hover:bg-black/5 dark:hover:bg-white/5 transition-colors border border-border-primary/50"
         >
