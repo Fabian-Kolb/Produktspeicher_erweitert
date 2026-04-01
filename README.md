@@ -1,4 +1,4 @@
-# 📦 Produktspeicher (Vibe Coding)
+# 📦 Produktspeicher_erweitert (Vibe Coding)
 **Ein funktionales Web-Projekt zur Verwaltung von Produktdaten, erstellt mit React und TypeScript.**
 
 ## 📝 Beschreibung
